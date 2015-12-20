@@ -6,13 +6,13 @@ REM
 setlocal ENABLEDELAYEDEXPANSION
 
 REM Get XL Release server home dir
-if "%xlrelease_home%"=="" (
+if "%xldeploy_home%"=="" (
     cd /d "%~dp0"
     cd ..
-    set xlrelease_home=!CD!
+    set xldeploy_home=!CD!
 )
 
-call "%xlrelease_home%\bin\.wrapper-env.cmd"
+call "%xldeploy_home%\bin\.wrapper-env.cmd"
 
 if %errorLevel% neq 0 ( exit /b %errorLevel% )
 

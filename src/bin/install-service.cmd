@@ -17,7 +17,7 @@ call "%xlrelease_home%\bin\.wrapper-env.cmd"
 if %errorLevel% neq 0 ( exit /b %errorLevel% )
 
 If NOT exist "%xlrelease_home%\conf\xl-release-server.conf" (
-    echo The XL Release server is not initialized. Please execute the server.cmd script!
+    echo The XL Release server is not initialized. Please execute the run.cmd script!
     exit /b 1
 )
 
